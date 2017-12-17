@@ -1,0 +1,42 @@
+body {
+    background-color: #333;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background-color: #fff;
+    animation-name: animation_color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    /* animation-direction: alternate; */
+}
+
+/* @keyframes animation_color {
+    0%    { background-color: rgb(255, 255, 255); left: 0px;   top: 0px;    border-radius: 50% 50% 50% 50%; }
+    25%   { background-color: rgb(255, 0, 0);     left: 300px; top: 0px;    border-radius: 50% 0 0 0; }
+    50%   { background-color: rgb(1, 255, 1);     left: 300px; top: 300px;  border-radius: 50% 50% 0 0; }
+    75%   { background-color: rgb(42, 230, 243);  left: 0px;   top: 300px;  border-radius: 50% 50% 50% 0; }
+    100%  { background-color: rgb(255, 255, 255); left: 0px;   top: 0px;    border-radius: 50% 50% 50% 50%; }
+
+} */
+
+@keyframes animation_color {
+    0%    { background-color: rgb(255, 255, 255); border-radius: 0 0 0 0; }
+    25%   { background-color: rgb(255, 0, 0);     border-radius: 50% 0 0 0; }
+    50%   { background-color: rgb(1, 255, 1);     border-radius: 50% 50% 0 0; }
+    75%   { background-color: rgb(42, 230, 243);  border-radius: 50% 50% 50% 0; }
+    100%  { background-color: rgb(255, 255, 255); border-radius: 50% 50% 50% 50%; }
+}
